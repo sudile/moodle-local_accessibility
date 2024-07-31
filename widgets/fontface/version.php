@@ -15,29 +15,20 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Plugin strings are defined here.
+ * Plugin version and other meta-data are defined here.
  *
- * @package     local_accessibility
- * @category    string
+ * @package     accessibility_fontface
  * @copyright   2023 Ponlawat Weerapanpisit <ponlawat_w@outlook.co.th>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'Accessibility';
+defined('MOODLE_INTERNAL') || die();
 
-$string['accessibilitywidgets'] = 'Accessibility Widgets';
-
-$string['subplugintype_accessibility'] = 'Accessibility Widget';
-$string['subplugintype_accessibility_plural'] = 'Accessibility Widgets';
-
-$string['widget'] = 'Widget';
-$string['manageenabledwidgets'] = 'Manage Enabled Widgets';
-$string['addwidget'] = 'Add Widget';
-
-$string['reset'] = 'Reset';
-$string['resetall'] = 'Reset All';
-
-$string['privacy:metadata:configs'] = 'A config for a widget in the plugin Accessibility Widgets';
-$string['privacy:metadata:configs:widget'] = 'Widget name';
-$string['privacy:metadata:configs:configvalue'] = 'Used config';
-$string['privacy:metadata:configs:userid'] = 'The user who is assigned to the config';
+$plugin->component = 'accessibility_fontface';
+$plugin->release = '1.0.0';
+$plugin->version = 2024051300;
+$plugin->requires = 2022041900;
+$plugin->maturity = MATURITY_STABLE;
+$plugin->dependencies = [
+    'local_accessibility' => 2024050800,
+];
